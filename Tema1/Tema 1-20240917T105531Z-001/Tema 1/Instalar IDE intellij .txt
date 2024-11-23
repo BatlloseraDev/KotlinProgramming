@@ -1,0 +1,18 @@
+Instalar jdk (Windows):
+https://www.oracle.com/java/technologies/downloads/#jdk17-windows  --> Bajar el instalador.
+
+Instalar intellij (Windows):
+https://www.jetbrains.com/idea/download/#section=windows
+
+
+
+Instalar jdk (Linux):
+sudo apt-get install openjdk-17-jre
+sudo apt-get install openjdk-17-jdk
+
+Instalar intellij (Linux):
+sudo snap install intellij-idea-community --classic --edge
+
+
+En cualquier caso (windows o linux), comprobar la versión:
+java --version
