@@ -7,10 +7,11 @@ const val M=5
 
 fun main() {
     var parejas= Array((N*M)/2){0} //2 que estan puestas las parejas, 3 las parejas ya estan encontradas
-    var tablero = Array(N){IntArray(M){generarParejas(parejas)}}
+    var tablero = Array(N){IntArray(M){generarParejas2(parejas)}}
     var contador =0
     while(parejasPorEncontrar(parejas))
     {
+        //.11..11..12..12..13..13..14
         var valores= Array(2){0}
         var pos1 = Array(2){-1}
         var pos2 = Array(2){-1}
@@ -107,6 +108,67 @@ fun parejasPorEncontrar(arrParejas: Array<Int>):Boolean
     return seguirJugando
 }
 
+fun generarCartas(numMax:Int)//metodo string comentado en clase
+{
+    var cartas=""
+    for(i in 1..numMax)
+    {
+        cartas = cartas +"$i."+"$i."
+    }
+}
+
+fun rellenarTableroString(t:Array<IntArray>,cartasAux:String)
+{
+    var cartas = cartasAux
+    for(i in t.indices)
+    {
+        for(j in t[i].indices)
+        {
+            var n = Random.nextInt(0, cartas.length)
+            t[i][j] = seleccionarCartaString(cartas,n);
+            cartas = borrarCarta(cartas,n)
+        }
+    }
+
+}
+
+fun borrarCarta(cartasAux: String,pos:Int):String
+{
+
+    return ""
+}
+
+fun seleccionarCartaString(cartasAux: String, pos: Int):Int
+{
+
+    return 0
+}
+
+fun generarParejas2(parejas: Array<Int>):Int{
+    var buscarPareja = true
+    var devolverNum = 0
+    var pos = Random.nextInt(0,parejas.size)
+    while(buscarPareja){
+        if(parejas[pos]!=2)
+        {
+            devolverNum=(pos+1)
+            parejas[pos]+=1
+            buscarPareja=false
+        }
+        else{
+            pos++
+            if(pos>=parejas.size)
+            {
+                pos=0
+            }
+        }
+    }
+return devolverNum
+}
+
+
+
+
 fun generarParejas(parejas: Array<Int>):Int{
 
     var buscarPareja= true
@@ -199,4 +261,6 @@ fun imprimirCartas(m:Array<IntArray>, pos:Array<Int>, pos2:Array<Int>, parejas: 
         println()
     }
 }
-
+/*
+*
+* */
