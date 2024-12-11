@@ -14,7 +14,7 @@ fun main() {
             "(2) Para Alfil\n" +
             "(3) Para Dama\n" +
             "(4) Para caballo")
-    var pos = elegirPosicion("Elige la posicion (numero) para fila (letra) para columna")
+    var pos = elegirPosicion("Elige: -la posicion (numero) para fila (letra) para columna")
     tablero[pos[0]][pos[1]] = "${letraFig} "
     printMatriz(tablero)
     interpretarMovimientos(pos, letraFig,tablero)
