@@ -1,0 +1,2 @@
+class JugadorHu_Or {
+}
