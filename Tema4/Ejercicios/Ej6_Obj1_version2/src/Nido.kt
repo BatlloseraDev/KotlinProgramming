@@ -6,19 +6,11 @@ class Nido {
     var maxSerpientes = 20
     var serpientes = ArrayList<Serpiente>()
 
-
-
-
-    fun vivirUnSegundo()
+    fun limpiarSerpientes()
     {
         if(serpientes.isNotEmpty())
         {
-            for(s in serpientes)
-            {
-                s.vivirUnAnio()
-
-            }
-            serpientes.removeIf{!it.viva} //me daba error intentar eliminar una serpiente mientras recorria el for.
+            serpientes.removeIf{!it.viva}
         }
     }
 
@@ -32,18 +24,15 @@ class Nido {
 
     fun mangostaAtaca()
     {
-        if(Random.nextDouble(.0,1.0)<=.2)
+        var cantidad = Random.nextInt(0,MAXKIllS+1)
+        for(i in 0 until cantidad)
         {
-            var cantidad = Random.nextInt(0,MAXKIllS+1)
-            for(i in 0 until cantidad)
+            if (serpientes.isNotEmpty())//como no especifica que serpiente es, lo hago de manera aleatoria
             {
-                if (serpientes.isNotEmpty())//como no especifica que serpiente es, lo hago de manera aleatoria
-                {
-                    serpientes.removeAt(Random.nextInt(serpientes.size))
-                }
+                serpientes.removeAt(Random.nextInt(serpientes.size))
             }
-
         }
+
     }
 
     override fun toString(): String {

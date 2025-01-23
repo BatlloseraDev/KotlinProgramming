@@ -37,28 +37,6 @@ class Serpiente {
         if(cuerpo.isEmpty()) viva= false
     }
 
-    fun vivirUnAnio()//cambiar al main
-    {
-        var probabilidad= Random.nextDouble(0.0 ,1.0)
-        if(viva)
-        {
-            if(edad<10)
-            {
-                if(probabilidad<.8) crecer()
-                else mudar()
-            }
-            else{
-                if(probabilidad<.9) decrecer()
-                else mudar()
-            }
-            if(probabilidad<.1)
-            {
-                println("Una serpiente murio por mangosta al pasar de año")
-                viva=false
-            }
-            edad++
-        }
-    }
 
 
     override fun toString(): String {
