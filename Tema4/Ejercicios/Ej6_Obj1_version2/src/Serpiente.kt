@@ -5,9 +5,15 @@ class Serpiente {
     var cuerpo = ArrayList<Char>()
     var viva= true
 
-    init {
+    constructor()
+    {
         cuerpo.add(generarColor())
     }
+
+
+  /*  init {
+        cuerpo.add(generarColor())
+    }*/
 
     fun generarColor():Char
     {
@@ -31,7 +37,7 @@ class Serpiente {
         if(cuerpo.isEmpty()) viva= false
     }
 
-    fun vivirUnAnio()
+    fun vivirUnAnio()//cambiar al main
     {
         var probabilidad= Random.nextDouble(0.0 ,1.0)
         if(viva)

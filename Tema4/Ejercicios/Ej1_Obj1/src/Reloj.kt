@@ -1,12 +1,14 @@
 class Reloj {
 
     var hora= 0
+        get() = field
         set(value)
         {
             if (value>=24)field=value%24
             else field=value
         }
     var min = 0
+        get()=field
         set(value)
         {
             if(value>=60)
@@ -16,6 +18,7 @@ class Reloj {
             }else field=value
         }
     var seg= 0
+        get()=field
         set(value)
         {
             if(value>=60)
@@ -37,7 +40,7 @@ class Reloj {
     }
 
     override fun toString(): String {
-        return "Son la/s $hora:$min:$seg (una menos en canarias)"
+        return "Son la/s ${String.format("%02d",hora)}:${String.format("%02d",min)}:${String.format("%02d",seg)} (una menos en canarias)"
     }
 
     fun recargarPila(porcentaje:Int)

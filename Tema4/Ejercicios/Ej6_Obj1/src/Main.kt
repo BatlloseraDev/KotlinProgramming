@@ -2,7 +2,7 @@ import kotlin.concurrent.thread
 import kotlin.random.Random
 
 val MAXTIME = 300
-val MAXNUEVASSERPIENTES= 3
+val MAXNUEVASSERPIENTES= 10
 
 fun main() {
 

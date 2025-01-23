@@ -1,11 +1,11 @@
 import kotlin.random.Random
 
-val MAXKIllS= 4
+
 
 class Nido {
     var maxSerpientes = 20
     var serpientes = ArrayList<Serpiente>()
-
+    private val MAXKIllS= 4
 
 
 

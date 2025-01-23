@@ -4,8 +4,8 @@ class Serpiente {
     var edad=0
     var cuerpo = ArrayList<Char>()
     var viva= true
-
-    init {
+    constructor()
+    {
         cuerpo.add(generarColor())
     }
 
