@@ -16,3 +16,12 @@ class Student(override val name: String, override val age: Int, val studentId: S
         println("$name is attending class with student ID $studentId.")
     }
 }
+
+/*
+* Clase persona-> mujer hombre
+* sacar clase de hombre y mujer
+* (abuelo) (padre) (hijo)
+* 1 sobrecarga en persona
+* 1 sobrescritura en hombre y mujer
+* prog principal array persona y polimorfismo.
+* */

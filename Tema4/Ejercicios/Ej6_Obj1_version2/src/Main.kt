@@ -29,7 +29,13 @@ fun main() {
         }
         if(segundos%10 == 0 && Random.nextDouble(.0,1.0)<=.2 ) nido.mangostaAtaca()  //depnde de si la mangosta ataca antes o despues de la generacion de serpientes.
 
-        nido.serpientes.forEach{vivirUnAnio(it)}
+
+        var s= nido.serpientes
+
+        for(i in s){
+            vivirUnAnio(i)
+        }
+
         nido.limpiarSerpientes()
         //nido.vivirUnSegundo()
 
