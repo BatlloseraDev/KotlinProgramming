@@ -21,7 +21,7 @@ class Carta {
 
     constructor()
     {
-        this.tipo= TipoCarta.values().random()
+        this.tipo= TipoCarta.entries.random()
         this.dado = Dado()
         this.vida= Random.nextInt(minVida, maxVida+1)
         this.poder= Random.nextInt(minPoder, maxPoder+1)

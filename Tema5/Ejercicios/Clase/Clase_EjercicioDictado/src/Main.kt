@@ -1,5 +1,7 @@
 fun main() {
-    println("Hello World!")
+
+
+    var arrayPersonas = ArrayList<Persona>()
 }
 
 /*

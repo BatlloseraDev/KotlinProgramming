@@ -46,6 +46,32 @@ class ControlErrores() {
                 null
             }
         }
+        fun pedirPorTecladoChar(texto:String, textoError: String):Char
+        {
+            var s:Char?=null
+            while(s==null)
+            {
+                println(texto)
+                s= devolverCharONull(readln(),textoError)
+            }
+            return s
+        }
+        private fun devolverCharONull(input: String, textoError: String):Char?
+        {
+            return try {
+                require(input.length==1){"Solo puede contener un character"}
+                input[0]
+                //if(input.length>1)
 
+                /*  input[0]
+                  require(input.isNotEmpty()){"El texto no puede estar vacio"}
+                  input*/
+            }
+            catch (e:IllegalArgumentException)
+            {
+                println(textoError)
+                null
+            }
+        }
     }
 }
