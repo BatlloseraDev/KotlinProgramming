@@ -15,6 +15,8 @@ class ElementoElaboracion {
         this.porcentaje= porcentaje
     }
 
-
+    override fun toString(): String {
+        return "El ingrediente: $nombre, grasas: $grasas, carbohidratos: $carbohidratos, porcentaje: $porcentaje"
+    }
 
 }

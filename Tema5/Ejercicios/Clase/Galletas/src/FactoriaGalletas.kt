@@ -128,7 +128,7 @@ enum class sabores
 
 enum class Ingredientes1
 {
-    harina, sal, azucar, miel, chcocolate, caramelo, coco, mantequilla, leche;
+    harina, sal, azucar, miel, chocolate, caramelo, coco, mantequilla, leche;
 }
 enum class SaboresEsp
 {

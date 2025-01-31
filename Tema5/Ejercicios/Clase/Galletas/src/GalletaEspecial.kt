@@ -32,5 +32,10 @@ class GalletaEspecial :GalletaBase {
     {
         galletasBase.add(g)
     }
+
+    override fun toString(): String {
+        return "Esta galleta es una galleta Especial \n\tSabor: $sabor\n\tPeso: $peso\n\t Forma: ${formaGalleta}  \n\tY las galletas base:\n\t"+
+                galletasBase.mapIndexed{index, GalletaBase-> "${index +1}. $GalletaBase" }.joinToString( "\n\t\t" )
+    }
 }
 

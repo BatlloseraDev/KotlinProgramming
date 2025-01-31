@@ -15,4 +15,7 @@ class Sabor {
 
     }
 
+    override fun toString(): String {
+        return "nombre: $nombre, grado dulzura: $gradoDulzura, precio coste: $precioCoste"
+    }
 }

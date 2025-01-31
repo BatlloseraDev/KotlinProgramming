@@ -22,6 +22,9 @@ open class GalletaRellena: GalletaBase {
     {
         return cantidadRelleno
     }
-
+    override fun toString(): String {
+        return "Esta galleta es una galleta Rellena \n\tSabor: $sabor \n\tSabor Relleno: $saborRelleno\n\tCantidad Relleno: $cantidadRelleno \n\tPeso: $peso\n\t  \n\tY las galletas base:\n\t\t"+
+                ingredientes.mapIndexed{index, ElementoElaboracion-> "${index +1}. $ElementoElaboracion" }.joinToString( "\n\t\t" )
+    }
 
 }
