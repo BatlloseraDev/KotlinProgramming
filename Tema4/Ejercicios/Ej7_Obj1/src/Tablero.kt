@@ -2,7 +2,7 @@ class Tablero {
 
 
     var dimensiones= 3;
-    var m = Array<IntArray>(dimensiones){IntArray(dimensiones){0} }
+    var m = Array<IntArray>(dimensiones){IntArray(dimensiones)}
     var mosca = Mosca()
 
     constructor()
@@ -16,6 +16,22 @@ class Tablero {
         ponerMoscaTablero(mosca.MoveMosca(dimensiones))
     }
 
+    fun asustar()
+    {
+        limpiarTablero()
+        ponerMoscaTablero(mosca.MoveMosca(dimensiones))
+    }
+
+    private fun limpiarTablero()
+    {
+        for(i in m.indices)
+        {
+            for(j in m.indices)
+            {
+                m[i][j]=0
+            }
+        }
+    }
 
     fun ponerMoscaTablero(pos:IntArray)
     {
@@ -81,7 +97,9 @@ class Tablero {
             for(j in -1..1)
             {
                 var deltaY = j + pos[1]
-                if(deltaX in 0..m.size && deltaY in 0..m.size )// me aseguro no salirme de la matriz
+
+
+                if(deltaX in 0 until dimensiones && deltaY in 0 until dimensiones )// me aseguro no salirme de la matriz
                 {
                     if(m[deltaX][deltaY]==1)
                     {
@@ -96,9 +114,14 @@ class Tablero {
     }
 
     fun GolpearMosca(){
-        mosca.MoveMosca(dimensiones)
+        limpiarTablero()
+        ponerMoscaTablero(mosca.MoveMosca(dimensiones))
         mosca.perderVida()
 
     }
 
+    fun ComprobarViva():Boolean
+    {
+        return mosca.vida>0
+    }
 }
