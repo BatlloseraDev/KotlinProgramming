@@ -15,9 +15,6 @@ fun main() {
         numGalleta = ControlErrores.pedirPorTecladoInt("Ingresa un numero de 1 a 100", "aprende a introducir numeros") -1
     }
 
-
-
-
     println(contenedorGalletas[numGalleta])
 
 }
