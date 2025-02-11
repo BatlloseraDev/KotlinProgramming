@@ -7,8 +7,6 @@ fun main(args: Array<String>) {
 
     listaGatos.add(g1)
 
-    var r = Rosa()
-
 
     println("Soy la variable g1 y apunto al objeto --->" + g1.toString())
 

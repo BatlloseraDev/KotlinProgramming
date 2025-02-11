@@ -26,13 +26,13 @@ class Factoria {
                 when(opc)
                 {
                     1->{
-                        ruta.lugaresTuristicos.add(CrearMuseo(i))
+                        ruta.aniadirLugar(CrearMuseo(i))
                     }
                     2->{
-                        ruta.lugaresTuristicos.add(CrearParque(i))
+                        ruta.aniadirLugar(CrearParque(i))
                     }
                     3->{
-                        ruta.lugaresTuristicos.add(CrearMonumento(i))
+                        ruta.aniadirLugar(CrearMonumento(i))
                     }
                 }
             }

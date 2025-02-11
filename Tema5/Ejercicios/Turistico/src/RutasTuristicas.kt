@@ -28,6 +28,11 @@ class RutasTuristicas
         numeroRutas++
     }
 
+    fun aniadirLugar(lugar:LugarTuristico)
+    {
+        lugaresTuristicos.add(lugar)
+    }
+
     fun estaTerminada():Boolean
     {
         return lugaresTuristicos.size==numLugares

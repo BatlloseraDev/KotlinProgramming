@@ -3,7 +3,6 @@ class Rosa: Vegetal(), serVivo {
 
     override fun estaVivo(valor: Int, tipo:String){}
 
-
     override fun nace() {
 
     }
