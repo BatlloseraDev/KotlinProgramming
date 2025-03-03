@@ -13,4 +13,13 @@ class Nave {
         id= contador
         contador++
     }
+
+    fun cambiarEstado(e:Boolean)
+    {
+        operativo=e
+    }
+
+    override fun toString(): String {
+        return "Nave id: $id\n\t\tOperativa:$operativo"
+    }
 }
