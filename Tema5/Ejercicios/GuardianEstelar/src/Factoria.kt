@@ -5,13 +5,13 @@ class Factoria {
 
         fun generarCristalPurpura(Padre:CoronaCristal):Cristal
         {
-            var id = Padre.id+Cristal.num_cristales
+            var id = Padre.id+Padre.cristales.size
             return Cristal(id,Padre,Colores.PURPURA,Costantes.generar_Energia())
         }
 
         fun generarCristalBasico(Padre: CoronaCristal): Cristal
         {
-            var id = Padre.id+Cristal.num_cristales
+            var id = Padre.id+Padre.cristales.size
             return Cristal(id, Padre,Costantes.generar_ColorBasico())
         }
 
