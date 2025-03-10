@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 class GuardianEstelar:Entidades {
 
     var historialEnergia= ArrayList<Int>()
@@ -22,14 +24,28 @@ class GuardianEstelar:Entidades {
     {
         var n= 0
         var maestro:Adversario?= null
-        while ((n<=adversarios.size/2 && maestro!=null) || n<adversarios.size && maestro==null ) //al menos siempre mirara la mitad aunque ya haya encontrado a un maestro
+        var copiaAdversario = ArrayList<Adversario>(adversarios)//de esta manera no modifico la memoria del otro array
+
+        while((n<=(adversarios.size/2) &&maestro!=null) || (n<adversarios.size && maestro==null) ){
+            var aleatorio= Random.nextInt(copiaAdversario.size)
+            if(copiaAdversario[aleatorio].maestro)
+            {
+                maestro=copiaAdversario[aleatorio]
+            }
+            else{
+                copiaAdversario.remove(copiaAdversario[aleatorio])
+            }//remuevo de la lista copiaada el aleatorio seleccionado. para que no vuelva a salir.
+            n++
+        }
+
+        /*while ((n<=adversarios.size/2 && maestro!=null) || n<adversarios.size && maestro==null ) //al menos siempre mirara la mitad aunque ya haya encontrado a un maestro
         {
             if(adversarios[n].maestro)
             {
                 maestro=adversarios[n]
             }
             n++
-        }
+        }*///no busca aleatoriamente
         return maestro
     }
 
@@ -41,5 +57,15 @@ class GuardianEstelar:Entidades {
         return  cristales.size
     }
 
+    fun devolverEnergia():Int
+    {
+        var e= Costantes.generar_Energia()
+        aniadirEnergia(e)
+        return e
+    }
 
+    fun devolverResistencia():Int
+    {
+        return resistencia
+    }
 }

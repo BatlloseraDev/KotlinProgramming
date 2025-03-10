@@ -13,7 +13,6 @@ open class CoronaCristal : Entidades{
     constructor()
     {
         this.tipo=TipoEntidad.ARTEFACTO
-
     }
 
 
