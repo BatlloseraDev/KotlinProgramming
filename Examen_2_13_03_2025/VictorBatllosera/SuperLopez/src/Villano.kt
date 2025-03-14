@@ -23,7 +23,7 @@ class Villano:Monigote {
         {
             //encuenta chupete negro
             cAux = chupeteUnico.generarChupete(true)
-            seniorDeLosChupetes=true
+            if(cAux is ChupeteNegro)seniorDeLosChupetes=true
 
         }
 

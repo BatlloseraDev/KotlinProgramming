@@ -30,10 +30,8 @@ fun main() {
 
         for(villano in villanos)
         {
-           if(!villano.seniorDeLosChupetes){
+            villano.buscarChupete(chupeteUnico)
 
-               villano.buscarChupete(chupeteUnico)
-           }
         }
 
         //Pinto seniores de los chupetes
@@ -42,7 +40,7 @@ fun main() {
         {
             if(villano.seniorDeLosChupetes && villano.devolverEnergiaTotal()==0)
             {
-               villano.seniorDeLosChupetes= false // lo se he "matado una mosca a base de cañonazos"
+               //villano.seniorDeLosChupetes= false // lo se he "matado una mosca a base de cañonazos"
             }
 
 
@@ -82,7 +80,11 @@ fun main() {
                 }
                 else{
                     println("Hubo un error quitando el chupete")
-                    vAux.seniorDeLosChupetes=false
+
+                }
+                if(vAux.seniorDeLosChupetes && vAux.devolverEnergiaTotal()==0)
+                {
+                    println("Hola")
                 }
             }
             else{
@@ -90,11 +92,14 @@ fun main() {
                 println("Super López perdió quedando a ${superLopez.vida} de vida")
             }
         }
+
+
         //checks fin juego
         if(!superLopez.estaVivo() || superLopez.tieneSeisChupetes())
         {
             juego=false
         }
+
 
 
     }

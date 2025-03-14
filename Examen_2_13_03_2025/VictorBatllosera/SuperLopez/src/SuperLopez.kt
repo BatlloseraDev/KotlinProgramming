@@ -25,7 +25,10 @@ class SuperLopez: Monigote {
 
             n++
         }
-
+        if(senior!=null && senior.devolverEnergiaTotal()==0)
+        {
+            println("Como he llegado aqui ?")
+        }
         return senior
 
     }

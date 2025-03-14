@@ -100,16 +100,16 @@ class Tablero {
             {
                 if(!tablero[i][j].descubierta && tablero[i][j].senialada)
                 {
-                    print("[${String.format("%2s", "🚩")}]")
+                    print("[${String.format("%1s", "*")}]")
                     //print("   [🚩]")
                 }
                 else if(!tablero[i][j].descubierta )
                 {
-                    print("[${String.format("%2s", "_")}]")
+                    print("[${String.format("%1s", "_")}]")
                     //print("[🟪]")
                 }
                 else{
-                    print("[${String.format("%2s", tablero[i][j].valor)}]")
+                    print("[${String.format("%1s", tablero[i][j].valor)}]")
 
                     //print("[${tablero[i][j].valor}]")
                 }
@@ -118,7 +118,9 @@ class Tablero {
         }
     }
 
-    fun descubrirCasillas(i:Int,j:Int) {
+    fun descubrirCasillas(i:Int,j:Int): Boolean {
+        var perder= false
+
         if (tablero[i][j].tipo != TipoCuadrado.MINA && !tablero[i][j].descubierta) {
             if (tablero[i][j].valor == 0) {
                 tablero[i][j].descubierta = true
@@ -136,9 +138,42 @@ class Tablero {
                 tablero[i][j].descubierta = true
             }
         }
-        else{
-            println("Has perdido")
+        else if(tablero[i][j].tipo == TipoCuadrado.MINA)
+        {
+            println("Has seleccionado una mina!")
+            perder= true
+
         }
+        return perder
+    }
+
+    fun marcarCasilla(i:Int,j:Int)
+    {
+        if(!tablero[i][j].descubierta)
+        {
+            tablero[i][j].senialada= !tablero[i][j].senialada
+        }
+
+    }
+
+    fun comprobarVictoria():Boolean
+    {
+        var victoria= false
+        var nAux = 0
+
+        for(i in tablero.indices)
+        {
+            for(j in tablero[i].indices)
+            {
+                if(tablero[i][j].valor==9 && tablero[i][j].senialada)
+                {
+                    nAux++
+                }
+            }
+        }
+        victoria= nAux==numBombas
+
+        return victoria
     }
 
 
