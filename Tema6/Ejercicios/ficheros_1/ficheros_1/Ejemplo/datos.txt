@@ -1,0 +1,8 @@
+Línea 1 a escribir en el fichero
+Línea 2 a escribir en el fichero
+soy escrito con el método write
+Línea 1 a escribir en el fichero
+Línea 2 a escribir en el fichero
+soy escrito con el método write
+Línea 1 a escribir en el fichero
+Línea 2 a escribir en el fichero
