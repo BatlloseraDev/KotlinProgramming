@@ -24,7 +24,7 @@ fun main() {
             1->{
                 //Aniadir una peli
                 println("Voy a añadir una peli")
-                addFichero(nombreFichero,pedirPelicula(),false)
+                addFichero(nombreFichero,pedirPelicula(),false)//separarmelo
             }
             2->{
                 //Eliminar una peli
