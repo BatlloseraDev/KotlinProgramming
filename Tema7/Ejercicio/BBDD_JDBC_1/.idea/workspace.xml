@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ceddef-b957-46f5-a4e9-b160fcf1f070" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Examen_2_13_03_2025/SuperLopez/SuperLopez.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Examen_2_13_03_2025/VictorBatllosera/SuperLopez/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Examen_2_13_03_2025/VictorBatllosera/SuperLopez/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Examen_2_13_03_2025/VictorBatllosera/SuperLopez/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Examen_2_13_03_2025/VictorBatllosera/SuperLopez/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Olimpiadas/Ejercicio_Olimpiadas/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Olimpiadas/Ejercicio_Olimpiadas/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/ficheros_1/Ejemplo/datos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/ficheros_1/Ejemplo/datos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/ficheros_1/src/main/kotlin/escribir.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/ficheros_1/src/main/kotlin/escribir.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/ficheros_1/src/main/kotlin/leer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tema6/Ejercicios/ficheros_1/ficheros_1/src/main/kotlin/leer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Tema6/EjerciciosRealizados/Ejercicio2_Tema6/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Tema6/EjerciciosRealizados/Ejercicio2_Tema6/.idea/material_theme_project_new.xml" afterDir="false" />
-    </list>
+    <list default="true" id="76ceddef-b957-46f5-a4e9-b160fcf1f070" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,42 +13,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BatlloseraDev"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BatlloseraDev/KotlinProgramming.git",
-    "accountId": "fbb8f713-b72d-4e65-a798-3af4f4fee0e2"
-  }
-}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2M36joOtI4siAJSJHyR8tfPCwCH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DAW/Programacion/GitHUbKotlin/KotlinProgramming/Tema7/mysql-connector-j-8.0.32.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/DAW/Programacion/KotlinProgramming/Tema6/EjerciciosRealizados/Ejercicio1_Tema7&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,23 +59,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676984059297</updated>
+      <workItem from="1743505375840" duration="150000" />
+      <workItem from="1743576178444" duration="15000" />
+      <workItem from="1743663100300" duration="722000" />
+      <workItem from="1743702369081" duration="596000" />
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="((ResultSetImpl)rs).db" language="kotlin" custom="com.mysql.cj.jdbc.result.ResultSetImpl" />
-      </configuration>
-    </watches-manager>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

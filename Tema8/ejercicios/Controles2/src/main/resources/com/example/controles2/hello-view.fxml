@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controles2.HelloController">
+   <children>
+      <ImageView fx:id="imagenCirculo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Dibujo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMenos" layoutX="5.0" layoutY="213.0" mnemonicParsing="false" onAction="#btnMenosPulsado" text="Menos" />
+      <Button fx:id="btnMas" layoutX="155.0" layoutY="213.0" mnemonicParsing="false" onAction="#btnMasPulsado" text="Mas" />
+   </children>
+</Pane>

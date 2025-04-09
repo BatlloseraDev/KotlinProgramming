@@ -1,0 +1,6 @@
+1,Hogar y electrodomésticos
+2,pescaderia
+4,perry
+5,el
+6,ornitorrinco
+8,beru

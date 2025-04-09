@@ -1,0 +1,7 @@
+1,fruteria
+2,pescaderia
+3,el no
+4,perry
+5,el
+6,ornitorrinco
+8,beru

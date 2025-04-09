@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controles.HelloController">
+   <children>
+      <CheckBox fx:id="cbPulsame" layoutX="42.0" layoutY="46.0" mnemonicParsing="false" onAction="#cbPulsamePulsado" prefHeight="17.0" prefWidth="120.0" text="Pulsame" />
+      <TitledPane animated="false" layoutX="33.0" layoutY="77.0" prefHeight="159.0" prefWidth="202.0" text="RadioBotton">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="116.0" prefWidth="208.0">
+               <children>
+                  <RadioButton fx:id="radioCon" layoutX="42.0" layoutY="6.0" mnemonicParsing="false" onAction="#radioConSeleccionado" text="Con Hambre">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="estado" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioSin" layoutX="42.0" layoutY="34.0" mnemonicParsing="false" text="Sin Hambre" toggleGroup="$estado" />
+                  <Label fx:id="lblSolucion" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="67.0" prefHeight="17.0" prefWidth="130.0" text="Solución" textFill="#d31616" />
+                  <Button fx:id="btnRevisar" layoutX="16.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnRevisarPulsado" text="Revisar" />
+                  <Button fx:id="btnInicializar" layoutX="125.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnInicializarPulsado" text="Inicializar" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="359.0" layoutY="14.0" prefHeight="144.0" prefWidth="202.0" text="Barra Progreso">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ProgressBar fx:id="pbTrabajo" layoutY="14.0" onMouseClicked="#pbTrabajoClicked" prefWidth="200.0" progress="0.26" />
+                  <Button fx:id="btnMenos" layoutX="14.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnMenosPulsado" text="-" />
+                  <Button fx:id="btnMas" layoutX="134.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnMasPulsado" text="+" />
+                  <Label fx:id="lblProgreso" layoutX="72.0" layoutY="77.0" text="0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <DatePicker fx:id="dpFecha" layoutX="26.0" layoutY="262.0" onAction="#dpFechaPulsado" />
+      <TextField fx:id="txtFecha" layoutX="29.0" layoutY="298.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="txtDia" layoutX="28.0" layoutY="334.0" prefHeight="25.0" prefWidth="35.0" />
+      <TextField fx:id="txtMes" layoutX="78.0" layoutY="334.0" prefHeight="25.0" prefWidth="35.0" />
+      <TextField fx:id="txtAnio" layoutX="129.0" layoutY="334.0" prefHeight="25.0" prefWidth="72.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="346.0" layoutY="175.0" opacity="0.33" stroke="BLACK" strokeType="INSIDE" width="238.0" />
+      <ComboBox fx:id="comboNombre" layoutX="359.0" layoutY="188.0" onAction="#comboNombrePulsado" prefWidth="150.0" />
+      <Button fx:id="btnAniadir" layoutX="520.0" layoutY="298.0" mnemonicParsing="false" onAction="#btnAniadirPulsado" prefHeight="25.0" prefWidth="51.0" text="Añadir" />
+      <TextField fx:id="txtNombre" layoutX="360.0" layoutY="250.0" />
+      <TextField fx:id="txtAniadir" layoutX="360.0" layoutY="298.0" />
+      <Button fx:id="btnCambiar" layoutX="264.0" layoutY="395.0" mnemonicParsing="false" onAction="#btnCambiarPulsado" text="Cambiar" />
+   </children>
+</Pane>
