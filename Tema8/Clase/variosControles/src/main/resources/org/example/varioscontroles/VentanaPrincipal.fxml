@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="421.0" prefWidth="309.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.varioscontroles.PrincipalController">
+    <children>
+        <Button fx:id="btAdd" layoutX="36.0" layoutY="126.0" onAction="#onAddPulsado" text="Añadir" />
+
+        <Label fx:id="welcomeText" layoutX="36.0" layoutY="26.0" prefHeight="17.0" prefWidth="64.0" text="Nombres:" />
+        <TextField fx:id="txtNombre" layoutX="111.0" layoutY="22.0" prefHeight="25.0" prefWidth="172.0" promptText="Escribe un nombre..." />
+        <Button fx:id="btSalir" layoutX="128.0" layoutY="371.0" mnemonicParsing="false" onAction="#onSalirPulsado" prefHeight="25.0" prefWidth="54.0" text="Salir" />
+        <ComboBox fx:id="coNombres" layoutX="111.0" layoutY="57.0" onAction="#onComboclick" prefHeight="25.0" prefWidth="172.0" />
+        <Button fx:id="btBorrarPulsado" layoutX="155.0" layoutY="126.0" mnemonicParsing="false" onAction="#onBorrarPulsado" text="Borrar seleccionado" />
+        <ChoiceBox fx:id="cbChoiceBox" layoutX="111.0" layoutY="88.0" prefHeight="25.0" prefWidth="172.0" />
+        <Pane cache="true" cacheHint="SPEED" depthTest="ENABLE" layoutX="83.0" layoutY="164.0" prefHeight="131.0" prefWidth="144.0" style="-fx-background-color: rgba(0,125,0,0.4);">
+            <children>
+                <CheckBox fx:id="chBox1" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" text="Opción 1" />
+                <CheckBox fx:id="chBox2" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" text="Opción 2" />
+                <CheckBox fx:id="chBox3" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Opción 3" />
+            </children>
+            <opaqueInsets>
+                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Pane>
+        <Button fx:id="btObtenerSeleccionados" layoutX="138.0" layoutY="325.0" mnemonicParsing="false" onAction="#onObtenerSelPulsado" text="Obtener seleccionados" />
+        <Label fx:id="welcomeText1" layoutX="36.0" layoutY="61.0" prefHeight="17.0" prefWidth="64.0" text="Combo:" />
+        <Label fx:id="welcomeText11" layoutX="36.0" layoutY="92.0" prefHeight="17.0" prefWidth="64.0" text="Choice:" />
+        <ToggleButton fx:id="btMarcarDesmarcar" layoutX="29.0" layoutY="325.0" mnemonicParsing="false" onAction="#onMarcarDesmarcasrPulsado" prefHeight="25.0" prefWidth="80.0" text="Marcar" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="556.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejercicio.controlesvarios.VentanaPrincipalController">
+   <children>
+   
+          <Label fx:id="welcomeText" layoutX="32.0" layoutY="37.0" prefHeight="17.0" prefWidth="284.0" text="Nombre" />
+       <Button defaultButton="true" layoutX="50.0" layoutY="445.0" onAction="#onBTNMarcadoresPressed" style="-fx-background-color: rgba(0,255,255,0.1);" text="Marcados" />
+      <Button fx:id="btnSalir" cancelButton="true" layoutX="220.0" layoutY="445.0" onAction="#onBTNSalirPressed" text="Salir" />
+      <TextField fx:id="txtNombre" layoutX="100.0" layoutY="33.0" promptText="escribe nombre" />
+      <Pane layoutX="78.0" layoutY="278.0" prefHeight="101.0" prefWidth="160.0">
+         <children>
+            <CheckBox fx:id="chbProg" mnemonicParsing="false" text="Programacion" />
+            <CheckBox fx:id="chbBaseDeDatos" layoutY="50.0" mnemonicParsing="false" text="Base de datos" />
+            <CheckBox fx:id="chbLenguajedeMarcas" layoutY="24.0" mnemonicParsing="false" text="Lenguaje de Marcas" />
+         </children>
+      </Pane>
+      <Pane layoutX="78.0" layoutY="377.0" prefHeight="56.0" prefWidth="160.0" style="-fx-background-color: rgba(122,0,0,0.2);">
+         <children>
+            <RadioButton fx:id="rbDAW" layoutX="37.0" layoutY="7.0" mnemonicParsing="false" text="DAW">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Cursos" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbDAM" layoutX="37.0" layoutY="34.0" mnemonicParsing="false" text="DAM" toggleGroup="$Cursos" />
+         </children>
+      </Pane>
+      <ComboBox fx:id="combNombres" layoutX="83.0" layoutY="108.0" onAction="#onComboNombresPressed" prefWidth="150.0" />
+      <ChoiceBox fx:id="choiceNombres" layoutX="83.0" layoutY="154.0" onMouseClicked="#onChoiceClicked" prefWidth="150.0" />
+      <Button fx:id="btnAdd" layoutX="297.0" layoutY="33.0" mnemonicParsing="false" onAction="#onAddPressed" text="Add" />
+   </children>
+</AnchorPane>

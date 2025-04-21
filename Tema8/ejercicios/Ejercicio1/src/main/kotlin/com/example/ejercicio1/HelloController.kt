@@ -3,6 +3,8 @@ package com.example.ejercicio1
 import javafx.event.ActionEvent
 import javafx.fxml.FXML
 import javafx.scene.control.TextField
+import javafx.scene.input.InputMethodEvent
+import javafx.scene.input.KeyEvent
 
 class HelloController {
 
@@ -74,6 +76,13 @@ class HelloController {
         }
 
     }
+
+
+    @FXML
+    fun onTextIntroduced(event: KeyEvent) {
+        println("Letra presionada ${event.code.char}")
+    }
+
 
     fun checkInt(n: String):Int?{
 

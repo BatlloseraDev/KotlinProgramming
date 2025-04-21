@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejercicio.ejercicioformulario.MostrarInfoController">
+   <children>
+      <TextField fx:id="txtNombre" editable="false" layoutX="127.0" layoutY="52.0" />
+      <Label layoutX="52.0" layoutY="56.0" text="Nombre" />
+      <TextField fx:id="txtEdad" editable="false" layoutX="367.0" layoutY="52.0" prefHeight="25.0" prefWidth="162.0" />
+      <Label layoutX="318.0" layoutY="56.0" text="Edad" />
+      <TextArea fx:id="txtAsignaturas" editable="false" layoutX="127.0" layoutY="200.0" prefHeight="64.0" prefWidth="402.0" />
+      <Label layoutX="52.0" layoutY="200.0" text="Asignaturas" />
+      <Label layoutX="319.0" layoutY="118.0" text="Dual" />
+      <TextField fx:id="txtDual" editable="false" layoutX="367.0" layoutY="114.0" prefHeight="25.0" prefWidth="162.0" />
+      <Label layoutX="52.0" layoutY="118.0" text="Curso" />
+      <TextField fx:id="txtCurso" editable="false" layoutX="129.0" layoutY="114.0" />
+      <Button fx:id="btnVolver" layoutX="441.0" layoutY="333.0" mnemonicParsing="false" onAction="#onBtnVolverPressed" prefHeight="25.0" prefWidth="88.0" text="Volver" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,2 @@
+Persona(V, 26, DAW, true,asignaturas=Programación, Sistemas)
+Persona(Natalia, 22, DAW, true,asignaturas=Programación, Base de Datos, Sistemas, Entornos)
