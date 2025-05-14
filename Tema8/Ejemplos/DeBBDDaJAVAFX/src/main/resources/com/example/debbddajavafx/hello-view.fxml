@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_LEFT" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.debbddajavafx.HelloController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <!-- Barra de menú -->
+    <MenuBar>
+        <menus>
+            <Menu text="Gestión">
+                <MenuItem fx:id="menuItemCategorias" text="Categorías" onAction="#abrirCategorias"/>
+                <MenuItem fx:id="menuItemEmpleados" text="Empleados" onAction="#abrirEmpleados"/>
+                <MenuItem fx:id="menuItemProductos" text="Productos" onAction="#abrirProductos"/>
+            </Menu>
+        </menus>
+    </MenuBar>
+</VBox>
+

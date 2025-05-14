@@ -49,6 +49,7 @@ class AleatoriotronController:Initializable{
     override fun initialize(p0: URL?, p1: ResourceBundle?) {
         spNumero1.valueFactory = SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 0)
         spNumero2.valueFactory = SpinnerValueFactory.IntegerSpinnerValueFactory(0, 100, 0)
+
         spNumero1.editor.textProperty().addListener { _, oldValue, newValue ->
             if (!newValue.matches(Regex("\\d*")) || newValue.isEmpty()) {
                 // Permitir solo números
@@ -58,6 +59,8 @@ class AleatoriotronController:Initializable{
 
             }
         }
+
+
         spNumero2.editor.textProperty().addListener { _, oldValue, newValue ->
             if (!newValue.matches(Regex("\\d*")) || newValue.isEmpty()) { // Permitir solo números
                 spNumero2.editor.text = oldValue

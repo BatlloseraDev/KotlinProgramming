@@ -1,0 +1,5 @@
+Animal 1, Nombre: Max , tipo: PERRO Disponible: SI raza: Labrador,ACOGIDA,c
+Animal 1, Nombre: Max , tipo: PERRO Disponible: SI raza: Labrador,ADOPCION,a
+Animal 1, Nombre: Max , tipo: PERRO Disponible: SI raza: Labrador,ADOPCION,a
+Animal 1, Nombre: Max , tipo: PERRO Disponible: SI raza: Labrador,ADOPCION,a
+Animal 1, Nombre: Max , tipo: PERRO Disponible: NO raza: Labrador,ADOPCION,a

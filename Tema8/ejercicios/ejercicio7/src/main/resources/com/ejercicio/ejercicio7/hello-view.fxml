@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="419.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejercicio.ejercicio7.HelloController">
+   <children>
+      <VBox layoutX="37.0" layoutY="67.0" prefHeight="85.0" prefWidth="176.0" spacing="10.0">
+         <children>
+            <RadioButton mnemonicParsing="false" text="Windows">
+               <toggleGroup>
+                  <ToggleGroup fx:id="SO" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Linux" toggleGroup="$SO" />
+            <RadioButton mnemonicParsing="false" text="Mac" toggleGroup="$SO" />
+         </children>
+      </VBox>
+      <Label layoutX="37.0" layoutY="31.0" text="Elige un sistema operativo" />
+      <VBox layoutX="37.0" layoutY="198.0" prefHeight="85.0" prefWidth="176.0" spacing="10.0">
+         <children>
+            <CheckBox mnemonicParsing="false" text="Programacion" />
+            <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Diseño Grafico" />
+            <CheckBox layoutX="10.0" layoutY="37.0" mnemonicParsing="false" text="Administracion" />
+         </children>
+      </VBox>
+      <Label layoutX="29.0" layoutY="167.0" text="Elige tu especialidad:" />
+      <Slider layoutX="73.0" layoutY="320.0" max="10.0" />
+      <Label layoutX="37.0" layoutY="318.0" text="0" />
+      <Separator layoutX="25.0" layoutY="152.0" prefHeight="14.0" prefWidth="304.0" />
+      <Separator layoutX="24.0" layoutY="283.0" prefHeight="14.0" prefWidth="304.0" />
+   </children>
+</AnchorPane>

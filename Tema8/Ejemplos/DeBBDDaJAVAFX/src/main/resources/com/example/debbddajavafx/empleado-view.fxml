@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.debbddajavafx.Presentacion.EmpleadoController">
+
+    <children>
+        <!-- Título -->
+        <Label layoutX="20.0" layoutY="20.0" text="Empleados">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+        <!-- ComboBox para seleccionar categoría -->
+        <ComboBox fx:id="comboEmpleados" layoutX="20.0" layoutY="60.0" prefWidth="300.0" />
+
+        <!-- Etiquetas y campos -->
+        <Label layoutX="20.0" layoutY="110.0" text="DNI:" />
+        <TextField fx:id="txtDNI" editable="false" layoutX="100.0" layoutY="105.0" prefWidth="150.0" />
+
+        <Label layoutX="20.0" layoutY="150.0" text="Nombre:" />
+        <TextField fx:id="txtNombre" layoutX="100.0" layoutY="145.0" prefWidth="300.0" />
+
+        <Label layoutX="19.0" layoutY="200.0" text="Puesto:" />
+        <TextField fx:id="txtPuesto" layoutX="100.0" layoutY="196.0" prefWidth="300.0" />
+
+
+
+        <!-- Botones de acción -->
+        <Button fx:id="btnAnadir" layoutX="20.0" layoutY="274.0" onAction="#anadirEmpleado" prefWidth="100.0" text="Añadir" />
+        <Button fx:id="btnModificar" layoutX="130.0" layoutY="274.0" onAction="#modificarEmpleado" prefWidth="100.0" text="Modificar" />
+        <Button fx:id="btnBorrar" layoutX="240.0" layoutY="274.0" onAction="#borrarEmpleado" prefWidth="100.0" text="Borrar" />
+
+        <!-- Botón Salir -->
+        <Button fx:id="btnSalir" layoutX="500.0" layoutY="350.0" onAction="#cerrarVentana" prefWidth="70.0" text="Salir" />
+
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.debbddajavafx.Presentacion.CategoriasController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <!-- Título -->
+        <Label layoutX="20.0" layoutY="20.0" text="Categorías">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+        <!-- ComboBox para seleccionar categoría -->
+        <ComboBox fx:id="comboCategorias" layoutX="20.0" layoutY="60.0" prefWidth="300.0" />
+
+        <!-- Etiquetas y campos -->
+        <Label layoutX="20.0" layoutY="110.0" text="Código:" />
+        <TextField fx:id="txtCodigo" layoutX="100.0" layoutY="105.0" prefWidth="150.0" editable="false" />
+
+        <Label layoutX="20.0" layoutY="150.0" text="Descripción:" />
+        <TextField fx:id="txtDescripcion" layoutX="100.0" layoutY="145.0" prefWidth="300.0" />
+
+        <!-- Botones de acción -->
+        <Button fx:id="btnAnadir" layoutX="20.0" layoutY="200.0" text="Añadir"
+                prefWidth="100.0" onAction="#anadirCategoria"/>
+        <Button fx:id="btnModificar" layoutX="130.0" layoutY="200.0" text="Modificar"
+                prefWidth="100.0" onAction="#modificarCategoria"/>
+        <Button fx:id="btnBorrar" layoutX="240.0" layoutY="200.0" text="Borrar"
+                prefWidth="100.0" onAction="#borrarCategoria"/>
+
+
+        <!-- Botón Salir -->
+        <Button fx:id="btnSalir" layoutX="500.0" layoutY="350.0" text="Salir" prefWidth="70.0" onAction="#cerrarVentana"/>
+
+    </children>
+</AnchorPane>
